@@ -8,17 +8,15 @@ public class Solution {
 
     public static void main(String[] args) {
         try {
-            divisionByZero();
-        }
-        catch (Exception e){
+            divideByZero();
+        } catch (ArithmeticException e){
             e.printStackTrace();
-            //System.out.println("Ошибка, на ноль делит нельзя ");
         }
-
     }
-    public static void divisionByZero(){
-        int a = 5;
-        int c = a / 0;
-        System.out.println(c);
+
+    public static void divideByZero() {
+
+        int n = 45/0;
+        System.out.println(n);
     }
 }

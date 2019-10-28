@@ -14,16 +14,14 @@ public class Solution {
             obj.method1();
             obj.method2();
             obj.method3();
-        }
-        catch (RuntimeException r){
+        } catch (RuntimeException r) {
             printStack(r);
-            System.out.println("uncheckd " + r);
+            System.out.println(r);
         }
     }
 
     public static void printStack(Throwable throwable) {
         System.out.println(throwable);
-
         for (StackTraceElement element : throwable.getStackTrace()) {
             System.out.println(element);
         }

@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task09.task0921"
-
-Метод в try..catch
+taskKey="com.javarush.task.task09.task0921"\n\nМетод в try..catch
 
 Написать программу, которая будет вводить числа с клавиатуры.
 Код по чтению чисел с клавиатуры должен быть в методе readData.

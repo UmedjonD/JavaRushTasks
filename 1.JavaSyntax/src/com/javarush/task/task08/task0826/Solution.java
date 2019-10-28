@@ -2,7 +2,9 @@ package com.javarush.task.task08.task0826;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 /* 
 Пять победителей
@@ -27,7 +29,6 @@ public class Solution {
 
     public static void sort(int[] array) {
         //напишите тут ваш код
-        int[] copy = array.clone();
 
         for (int i=array.length-1; i>0; i--){
            for (int j=0; j<i; j++){
@@ -40,6 +41,20 @@ public class Solution {
                }
            }
         }
+        //другой способ
+        /*
+        ArrayList<Integer> numb = new ArrayList<>();
+
+        for (int i=0; i<array.length; i++){
+            numb.add(array[i]);
+        }
+
+        Collections.sort(numb);
+        Collections.reverse(numb);
+
+        for (int i=0; i<array.length; i++){
+            array[i] = numb.get(i);
+        }*/
 
     }
 }

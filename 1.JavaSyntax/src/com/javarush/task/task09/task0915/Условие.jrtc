@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task09.task0915"
-
-Перехват выборочных исключений
+taskKey="com.javarush.task.task09.task0915"\n\nПерехват выборочных исключений
 
 1. Разберись, какие исключения бросает метод BEAN.methodThrowExceptions.
 2. Метод handleExceptions должен вызывать метод BEAN.methodThrowExceptions и обрабатывать исключения:

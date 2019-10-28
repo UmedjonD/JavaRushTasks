@@ -5,15 +5,13 @@ package com.javarush.task.task09.task0905;
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception {
-        int deep = getStackTraceDeep();
-        //System.out.println(deep);
+    public static void main(String[] args) {
+        int deep = getStackTraceDepth();
     }
 
-    public static int getStackTraceDeep() {
+    public static int getStackTraceDepth() {
         //напишите тут ваш код
-        StackTraceElement[] stackTraceElements =  Thread.currentThread().getStackTrace();
-
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
         System.out.println(stackTraceElements.length);
         return stackTraceElements.length;
     }

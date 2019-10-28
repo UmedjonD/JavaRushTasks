@@ -15,12 +15,11 @@ public class Solution {
 
     public static void handleExceptions(Solution obj) {
         try {
-        obj.method1();
-        obj.method2();
-        obj.method3();
-    }
-    catch (Exception e){
-        System.out.println("name Exception is "+ e);
+            obj.method1();
+            obj.method2();
+            obj.method3();
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
 

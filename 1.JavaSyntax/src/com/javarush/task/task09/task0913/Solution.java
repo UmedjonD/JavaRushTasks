@@ -12,12 +12,10 @@ public class Solution {
         //напишите тут ваш код
         try {
             method1();
-        }
-        catch (NullPointerException e){
-            System.out.println("oshibka 1 "+ e);
-        }
-        catch (FileNotFoundException e){
-            System.out.println("oshibka 2 "+ e);
+        } catch (NullPointerException e) {
+            System.out.println(e);
+        } catch (FileNotFoundException g) {
+            System.out.println(g);
         }
 
         //напишите тут ваш код
@@ -25,13 +23,14 @@ public class Solution {
 
     public static void method1() throws NullPointerException, ArithmeticException, FileNotFoundException, URISyntaxException {
         int i = (int) (Math.random() * 4);
-        if (i == 0)
+        if (i == 0) {
             throw new NullPointerException();
-        if (i == 1)
+        } else if (i == 1) {
             throw new ArithmeticException();
-        if (i == 2)
+        } else if (i == 2) {
             throw new FileNotFoundException();
-        if (i == 3)
+        } else if (i == 3) {
             throw new URISyntaxException("", "");
+        }
     }
 }

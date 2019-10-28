@@ -36,4 +36,31 @@ public class Solution {
                 System.out.println(value);
         }
     }
+    /*второй спсособ
+    * BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Map<Integer, String> map = new HashMap<>();
+        String str = reader.readLine();
+
+        map.put(1, "January");
+        map.put(2, "February");
+        map.put(3, "March");
+        map.put(4, "April");
+        map.put(5, "May");
+        map.put(6, "June");
+        map.put(7, "July");
+        map.put(8, "August");
+        map.put(9, "September");
+        map.put(10, "October");
+        map.put(11, "November");
+        map.put(12, "December");
+
+        for (Map.Entry<Integer, String> pair : map.entrySet()) {
+
+            int key = pair.getKey();
+            String value = pair.getValue();
+
+            if (str.equals(value))
+                System.out.println(value + " is the " + key + " month");
+        }
+    * */
 }

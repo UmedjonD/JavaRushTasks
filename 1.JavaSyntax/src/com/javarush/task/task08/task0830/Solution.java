@@ -31,7 +31,8 @@ public class Solution {
                 boolean flag;
                 flag = isGreaterThan(array[j], array[j + 1]);
                 if (flag) {
-                    String tmp = array[j]; array[j] = array[j + 1];
+                    String tmp = array[j];
+                    array[j] = array[j + 1];
                     array[j + 1] = tmp; }
             }
         }
