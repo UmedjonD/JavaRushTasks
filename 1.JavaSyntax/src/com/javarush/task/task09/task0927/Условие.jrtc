@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task09.task0927"
-
-Десять котов
+taskKey="com.javarush.task.task09.task0927"\n\nДесять котов
 
 Есть класс кот – Cat, с полем «имя» (String).
 Создать словарь Map<String, Cat> и добавить туда 10 котов в виде «Имя»-«Кот».

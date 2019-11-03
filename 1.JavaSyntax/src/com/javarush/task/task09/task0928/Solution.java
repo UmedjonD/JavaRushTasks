@@ -18,13 +18,11 @@ public class Solution {
 
         int count = 0;
 
-            while (fileInputStream.available() > 0) {
-                int data = fileInputStream.read();
-                fileOutputStream.write(data);
-                count++;
-            }
-
-
+        while (fileInputStream.available() > 0) {
+            int data = fileInputStream.read();
+            fileOutputStream.write(data);
+            count++;
+        }
 
         System.out.println("Скопировано байт " + count);
 

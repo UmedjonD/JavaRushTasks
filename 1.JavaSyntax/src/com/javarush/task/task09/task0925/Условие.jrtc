@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task09.task0925"
-
-Статики не на своем месте
+taskKey="com.javarush.task.task09.task0925"\n\nСтатики не на своем месте
 
 Расставь модификаторы static так, чтобы пример скомпилировался.
 

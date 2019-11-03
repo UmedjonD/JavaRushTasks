@@ -1,9 +1,6 @@
 package com.javarush.task.task09.task0927;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /* 
 Десять котов
@@ -18,25 +15,25 @@ public class Solution {
 
     public static Map<String, Cat> createMap() {
         //напишите тут ваш код
-        HashMap<String, Cat> cats = new HashMap<>();
+        Map<String, Cat> map = new HashMap<>();
+        map.put("Kotik", new Cat("Barsik"));
+        map.put("Kotik2", new Cat("Barsik"));
+        map.put("Koti3", new Cat("Barsik"));
+        map.put("Kotik4", new Cat("Barsik"));
+        map.put("Koti5", new Cat("Barsik"));
+        map.put("Koti6", new Cat("Barsik"));
+        map.put("Koti7", new Cat("Barsik"));
+        map.put("Koti8", new Cat("Barsik"));
+        map.put("Koti9", new Cat("Barsik"));
+        map.put("Kotik10", new Cat("Barsik"));
 
-        cats.put("Djon", new Cat ("Joni"));
-        cats.put("Anti", new Cat("Anti"));
-        cats.put("Dimi", new Cat("Dimi"));
-        cats.put("Timie", new Cat("Timie"));
-        cats.put("Lo", new Cat("Lo"));
-        cats.put("Andi", new Cat("Andi"));
-        cats.put("Lahi", new Cat("Lahi"));
-        cats.put("Domh", new Cat("Domh"));
-        cats.put("More", new Cat("More"));
-        cats.put("Alea", new Cat("Alea"));
-        return cats;
-        }
+        return map;
+    }
 
     public static Set<Cat> convertMapToSet(Map<String, Cat> map) {
+        Set set = new HashSet(map.values());
+        return set;
         //напишите тут ваш код
-        HashSet hashSet = new HashSet(map.values());
-        return hashSet;
     }
 
     public static void printCatSet(Set<Cat> set) {
