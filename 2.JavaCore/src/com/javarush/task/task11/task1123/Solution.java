@@ -6,6 +6,7 @@ public class Solution {
 
         Pair<Integer, Integer> result = getMinimumAndMaximum(data);
 
+
         System.out.println("The minimum is " + result.x);
         System.out.println("The maximum is " + result.y);
     }
